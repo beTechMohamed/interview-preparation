@@ -19,3 +19,18 @@ const flatten = (array, index, output)=>{
 console.log(flatten(a,0,[]))
 
 ```
+
+```bash 
+let students = [{id:1,name:"Moahmed"},{id:2,name:"Yasin"}, {id:1,name:"Moahmed"},{id:2,name:"Yasin"}, {id:3,name:"Srikanth"}];
+
+let visited  = []
+result = students.filter((item)=>{
+  	const id = item["id"];
+	if(!visited.includes(id)){
+        visited.push(id);
+    	return item;
+    }
+})
+
+console.log(result)
+```
