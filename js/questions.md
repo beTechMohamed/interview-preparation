@@ -8,3 +8,16 @@
 ### Why we can reassign or extend the const declared object?
 ### How to do deep copy
 ### call vs apply vs bind
+
+
+# 💻 JavaScript Interview Notes
+
+---
+
+## 1️⃣ Hoisting
+
+**Hoisting** is JavaScript's behavior of moving variable and function declarations to the top of their scope during compilation.
+
+```js
+console.log(a); // undefined
+var a = 10;
