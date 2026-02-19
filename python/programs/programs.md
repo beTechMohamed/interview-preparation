@@ -13,3 +13,19 @@ def flatten(array,index,output):
 print(flatten(a,0,[]))
 ```
 
+## count occurance of sub string
+
+### string = "yasincdcdc"
+### match = "cdc"
+### output = 2
+
+```bash
+import re
+
+string = "yasincdcdc"
+match = "cdc"
+
+count = len(re.findall(f'(?={match})', string))
+print(count)  # 2
+```
+
