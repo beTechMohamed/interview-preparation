@@ -46,11 +46,5 @@ It is built on top of:
 
 ---
 
-## 3️⃣ Arrow vs Regular Function in Object Methods
-
-```js
-const a = { b: () => console.log(this) };
-a.b(); // global / undefined
-
-const b = { b: function() { console.log(this) } };
+on() { console.log(this) } };
 b.b(); // b object
