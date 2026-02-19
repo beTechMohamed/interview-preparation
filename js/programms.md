@@ -114,4 +114,20 @@ Given array [3, 5, 8, 11, 1, -1, 7] and targetSum = 10
 
 Output: [11,-1], [3,7]
 
- 
+Question
+ const a = { b: () => console.log(this) };
+a.b(); // global object / undefined
+
+const b = { b: function() { console.log(this) } };
+b.b(); // b object
+
+Question
+const a = ['a']
+const b = a
+b[0] = "b"
+console.log(a, b) // ['b'] ['b']
+
+const b = [...a]
+b[0] = "b"
+console.log(a, b) // ['a'] ['b']
+
